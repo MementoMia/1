@@ -1,0 +1,42 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ol {
+        list-style-position: inside;
+        list-style-type:none ;
+        counter-reset: number;
+        padding: 1em 5em;
+        border: 1px solid;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    ol li::before {
+        content: counter(number) ')';
+        counter-increment: number;
+        background-color: aquamarine;
+    }
+
+    #red{
+        color: red;
+    }
+
+    #orange {
+        color: orange; 
+    }
+
+    #green{
+        color: green;
+    }
+
+    #pink{
+        color: pink;
+    }
+
+    .headding{
+        border: 1px red solid;
+    }
